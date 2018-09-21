@@ -58,6 +58,11 @@ static GLDeviceInfo *deviceInfo;
     if ([deviceString isEqualToString:@"iPhone10,5"])   _deviceName = @"iPhone 8 Plus";//美版(Global/A1897)
     if ([deviceString isEqualToString:@"iPhone10,3"])   _deviceName = @"iPhone X";//国行(A1865)、日行(A1902)
     if ([deviceString isEqualToString:@"iPhone10,6"])   _deviceName = @"iPhone X";//美版(Global/A1901)
+    if ([deviceString isEqualToString:@"iPhone11,8"]) return @"iPhone XR";
+    if ([deviceString isEqualToString:@"iPhone11,2"]) return @"iPhone XS";
+    if ([deviceString isEqualToString:@"iPhone11,4"] ||
+        [deviceString isEqualToString:@"iPhone11,6"]) return @"iPhone XS Max";
+
     if ([deviceString isEqualToString:@"iPhone3,1"])    _deviceName = @"iPhone 4";
     if ([deviceString isEqualToString:@"iPhone3,2"])    _deviceName = @"iPhone 4";
     if ([deviceString isEqualToString:@"iPhone3,3"])    _deviceName = @"iPhone 4";
