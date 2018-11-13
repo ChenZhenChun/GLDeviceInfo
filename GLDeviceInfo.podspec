@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 s.name              = "GLDeviceInfo"
 
 #更新代码必须修改版本号
-s.version           = "0.0.2"
+s.version           = "0.0.3"
 s.summary           = "Manage local notifications for ios."
 s.description       = <<-DESC
 It is a GLDeviceInfo used on iOS, which implement by Objective-C.
